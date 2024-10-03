@@ -1,0 +1,15 @@
+footer div{
+  padding: 0.75rem;
+  background-color: var(--color-danger);
+  border-radius: 0.75rem;
+  margin-top: 2.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & span{
+    margin-right: auto;
+    font: var(--label);
+    color: var(--always-white);
+  }
+}

@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-a{
-  text-decoration: none;
-}
-
 :root{
   --bg-primary: ##F4F5FB;
   --bg-secondary: #FFFFFF;
@@ -36,4 +32,19 @@ a{
 
 h1{
   font: var(--title);
+}
+
+
+a{
+  text-decoration: none;
+  font: var(--link);
+  color: var(--color-brand);
+}
+
+a:hover{
+  color: var(--color-brand-hover);
+}
+
+.container{
+  margin-inline: 2rem;
 }

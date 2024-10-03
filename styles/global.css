@@ -5,7 +5,7 @@
 }
 
 :root{
-  --bg-primary: ##F4F5FB;
+  --bg-primary: #F4F5FB;
   --bg-secondary: #FFFFFF;
 
   --color-brand: #CA3884;
@@ -30,8 +30,16 @@
   --link: 500 0.875rem/1rem var(--font-family);
 }
 
+body{
+  background-color: var(--bg-primary);
+}
+
 h1{
   font: var(--title);
+}
+
+ul{
+  list-style: none;
 }
 
 

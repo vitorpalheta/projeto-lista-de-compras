@@ -38,9 +38,11 @@ h1{
   font: var(--title);
 }
 
-ul{
-  list-style: none;
+input[type="checkbox"]{
+  appearance: none;
+  border: 2px solid transparent;
 }
+
 
 
 a{

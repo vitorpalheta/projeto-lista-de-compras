@@ -19,39 +19,23 @@
       <h1>Compras da semana</h1>
 
       <div class="add-item">
+        
         <input type="text" name="item" id="item" placeholder="Adicionar um novo item">
-        <button type="submit">Adicionar item</button>
+        <button onclick="addItem()" type="submit">Adicionar item</button>
+        
       </div>
     </header>
 
     <main>
-      <section id="list-items">
-        <ul>
-          <li>
-            <img src="images/icons/checkbox.svg" alt="Checkbox">
-            <span>Pão de forma</span>
-            <img src="images/icons/trash.svg" alt="Lixeira">
-          </li>
+      <section>
 
-          <li>
-            <img src="images/icons/checkbox.svg" alt="Checkbox">
-            <span>Café preto</span>
-            <img src="images/icons/trash.svg" alt="Lixeira">
-          </li>
+        <ul id="list-container">
+          <!-- <li class="checked">Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li> -->
 
-          <li>
-            <img src="images/icons/checkbox.svg" alt="Checkbox">
-            <span>Suco de laranja</span>
-            <img src="images/icons/trash.svg" alt="Lixeira">
-          </li>
-
-          <li>
-            <img src="images/icons/checkbox.svg" alt="Checkbox">
-            <span>Biscoito</span>
-            <img src="images/icons/trash.svg" alt="Lixeira">
-          </li>
+          
         </ul>
-      </section>
     </main>
 
     <footer>

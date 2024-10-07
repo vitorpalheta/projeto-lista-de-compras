@@ -18,6 +18,20 @@ function addItem(){
   inputBox.value = "";
 }
 
+listContainer.addEventListener("click", function(event){
+  let mensage = document.getElementById("mensage-remove");   
+  
+
+  if(event.target.tagName === "LI"){
+    event.target.classList.toggle("checked");
+    
+  }
+  else if(event.target.tagName === "IMG"){ 
+    event.target.parentElement.remove();
+    mensage.style.display = "block";
+  }
+}, false);
+
 //Manipulando o input item para receber textos
 // item.addEventListener("input", () =>{
 //   console.log(item.value)

@@ -1,11 +1,24 @@
 const inputBox = document.getElementById("item");
 const listContainer = document.getElementById("list-container");
+let mensage = document.getElementById("mensage-remove");
+mensage.style.display = "none";
+
+// Aciona a tecla enter para adicionar os itens
+inputBox.addEventListener('keyup', function(e){
+  var key = e.which || e.keyCode;
+  if (key == 13) { // codigo da tecla enter
+    //Chama a fução de adicionar item na lista
+    addItem();
+  }
+});
 
 function addItem(){
+  
   if(inputBox.value === ''){
     alert("Você deve escrever alguma coisa!")
   }
   else{
+   
     let li = document.createElement("li")
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
@@ -18,9 +31,8 @@ function addItem(){
   inputBox.value = "";
 }
 
+
 listContainer.addEventListener("click", function(event){
-  let mensage = document.getElementById("mensage-remove");   
-  
 
   if(event.target.tagName === "LI"){
     event.target.classList.toggle("checked");
@@ -28,7 +40,10 @@ listContainer.addEventListener("click", function(event){
   }
   else if(event.target.tagName === "IMG"){ 
     event.target.parentElement.remove();
-    mensage.style.display = "block";
+    mensage.style.display = "block"
+    mensage.style.animation = "";
+    setTimeout(() => mensage.style.animation = "fade-out 1s ease-out 3s both", 5)
+    
   }
 }, false);
 
